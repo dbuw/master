@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="brkgeneticalgorithm.h" open="1" top="0" tabpos="6">
-		<Cursor position="185" topLine="0" />
+	<File name="population.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="819" topLine="8" />
+		</Cursor>
 	</File>
-	<File name="evolver.h" open="1" top="0" tabpos="8">
-		<Cursor position="855" topLine="14" />
+	<File name="util.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="274" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="51" topLine="0" />
+	<File name="evolver.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="293" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="parameters.h" open="1" top="0" tabpos="2">
-		<Cursor position="1110" topLine="3" />
+	<File name="parameters.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="835" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="population.h" open="1" top="1" tabpos="3">
-		<Cursor position="1286" topLine="51" />
-	</File>
-	<File name="random.h" open="1" top="0" tabpos="9">
-		<Cursor position="112" topLine="0" />
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="67" topLine="0" />
+		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
