@@ -33,13 +33,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="brkgeneticalgorithm.cpp" />
-		<Unit filename="brkgeneticalgorithm.h" />
 		<Unit filename="evolver.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="parameters.h" />
 		<Unit filename="population.h" />
-		<Unit filename="random.h" />
+		<Unit filename="util.h" />
 		<Extensions>
 			<envvars />
 			<code_completion />
