@@ -24,7 +24,6 @@ class Parameters
         void setNrChromosomes(int i){numC = i;};
         void setNrMutants(int i){numM = i;};
         void setNrElites(int i){numE = i;};
-        void setCrossoverThreshhold(int i){pc = i;};
         void setNrGenes(int i){numGenes = i;};
         //getters
         int maxGen(){return numGens;};
@@ -32,7 +31,6 @@ class Parameters
         int nrMutants(){return numM;};
         int nrElites(){return numE;};
         int nrOffspring(){return (numC - numE - numM);};
-        int crossoverThreshhold(){return pc;};
         int nrGenes(){return numGenes;};
 
     private:
@@ -41,7 +39,7 @@ class Parameters
         int numC; //number of Chromosomes in a Generation
         int numM; //number of Mutants in a Generation
         int numE; //number of Elites in a Generation
-        int pc; // threshhold for Crossover decision
+        int pc; // threshold for Crossover decision
         int numGenes; //number of genes in a chromosome
 };
 
