@@ -50,7 +50,7 @@ class Population
         if (i > popSz){
             return pop.begin();
         }
-        return pop.begin()+(index[i].second*chSz);
+        return pop.begin()+(fit[i].second*chSz);
     };
 
     iterator chromosomeEnd(size_type i){
@@ -68,13 +68,11 @@ class Population
         return fit.end();
     }
 
-    sortFitness(){
-        std::sort(fit.begin(), fit.end());
-    }
+
 
     private:
     container pop; //datastructure for population
-    std::vector<std::pair<index_type,fitnes_type>> fit;
+    std::vector<std::pair<index_type,fitness_type>> fit;
     size_type popSz; //size of population
     size_type chSz; //number of genes in a chromosome
 };

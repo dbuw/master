@@ -19,3 +19,12 @@
 
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
+1399622686 source:c:\users\david\documents\github\master\main.cpp
+	<iostream>
+	"population.h"
+
+1399666916 c:\users\david\documents\github\master\population.h
+	<vector>
+	<algorithm>
+	<utility>
+
