@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1399556175 source:/home/bam/c/BRKGA/generation.cpp
+	"generation.h"
+
+1399561139 /home/bam/c/BRKGA/generation.h
+	"population.h"
+
+1399619086 source:/home/bam/c/BRKGA/main.cpp
+	<iostream>
+	"population.h"
+
+1399628937 /home/bam/c/BRKGA/population.h
+	<vector>
+	<algorithm>
+	<utility>
+
+1399621510 source:/home/bam/c/BRKGA/brkgeneticalgorithm.cpp
+	"brkgeneticalgorithm.h"
+
+1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
+
