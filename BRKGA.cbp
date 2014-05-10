@@ -12,8 +12,13 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
+					<Add directory="UnitTest++/src" />
 				</Compiler>
+				<Linker>
+					<Add library="UnitTest++\Deliv\Debug\libUnitTest++.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/BRKGA" prefix_auto="1" extension_auto="1" />
@@ -22,9 +27,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="UnitTest++/src" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="UnitTest++\Deliv\Release\libUnitTest++.a" />
 				</Linker>
 			</Target>
 		</Build>
@@ -33,10 +41,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CLSD/clsddecoder.cpp" />
+		<Unit filename="CLSD/clsddecoder.h" />
+		<Unit filename="brkga.h" />
+		<Unit filename="decoder.h" />
 		<Unit filename="evolver.h" />
+		<Unit filename="initializer.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="parameters.h" />
 		<Unit filename="population.h" />
+		<Unit filename="random.h" />
+		<Unit filename="test/evolvertest.h" />
+		<Unit filename="test/populationtest.h" />
 		<Unit filename="util.h" />
 		<Extensions>
 			<envvars />

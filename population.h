@@ -4,11 +4,13 @@
 #include <vector>
 #include <algorithm>
 #include <utility>
+namespace BRKGA
+{
 
-template <class T>
+//template <class T>
 class Population
 {
-    typedef T type;
+    typedef int type;
     typedef std::vector<type> container;
     typedef typename container::size_type size_type;
     typedef typename container::iterator iterator;
@@ -21,26 +23,42 @@ class Population
     public:
     Population(){}
     Population(size_type popSize, size_type chromosomeSize)
-    : popSz(popSize)
+    : pop(popSize*chromosomeSize,0)
+    , fit(popSize)
+    , popSz(popSize)
     , chSz(chromosomeSize)
+
     {
+      initIndex();
     }
 
     Population(size_type popSize, size_type chromosomeSize, const container& Pop)
-    : popSz(popSize)
+    : pop(Pop)
+    , fit(popSize)
+    , popSz(popSize)
     , chSz(chromosomeSize)
-    , pop(Pop)
-    {
 
+    {
+      initIndex();
     }
-    Population(const Population<T>& p)
-    : popSz(p.popSz)
+    Population(const Population& p)
+    : pop(p.pop)
+    , fit(p.fit)
+    , popSz(p.popSz)
     , chSz(p.chSz)
-    , pop(p.pop)
     {
 
     }
 
+    void initIndex(){
+      for (unsigned i = 0; i < popSz; ++i){
+        fit[i].first = i;
+        fit[i].second = 0;
+      }
+    }
+
+    size_type size(){return pop.size();};
+    size_type chromosomeSize(){return chSz;};
     iterator begin(){return pop.begin();};
     iterator end(){return pop.end();};
     const_iterator begin() const {return pop.begin();};
@@ -50,14 +68,14 @@ class Population
         if (i > popSz){
             return pop.begin();
         }
-        return pop.begin()+(fit[i].second*chSz);
+        return (pop.begin()+(fit[i].first*chSz));
     };
 
     iterator chromosomeEnd(size_type i){
         if (i > popSz){
             return pop.end();
         }
-        return pop.end()+(fit[i].second*chSz);
+        return pop.begin()+(fit[i].first*chSz+chSz);
     };
 
     fitnessIterator beginFitness(){
@@ -68,8 +86,6 @@ class Population
         return fit.end();
     }
 
-
-
     private:
     container pop; //datastructure for population
     std::vector<std::pair<index_type,fitness_type>> fit;
@@ -77,7 +93,7 @@ class Population
     size_type chSz; //number of genes in a chromosome
 };
 
-
+}
 
 
 

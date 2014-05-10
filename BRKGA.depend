@@ -19,22 +19,142 @@
 
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
-1399668840 source:c:\users\david\documents\github\master\main.cpp
+1399739672 source:c:\users\david\documents\github\master\main.cpp
 	<iostream>
-	"population.h"
-	"evolver.h"
+	"UnitTest++.h"
+	"test/populationtest.h"
+	"test/evolvertest.h"
+	"brkga.h"
 
-1399666916 c:\users\david\documents\github\master\population.h
+1399750071 c:\users\david\documents\github\master\population.h
 	<vector>
 	<algorithm>
 	<utility>
 
-1399669551 c:\users\david\documents\github\master\evolver.h
+1399749071 c:\users\david\documents\github\master\evolver.h
 	"population.h"
 	"parameters.h"
+	"initializer.h"
+	"random.h"
 	"util.h"
 
-1399670796 c:\users\david\documents\github\master\parameters.h
+1399749851 c:\users\david\documents\github\master\parameters.h
+	<math.h>
 
-1399669595 c:\users\david\documents\github\master\util.h
+1399740733 c:\users\david\documents\github\master\util.h
+
+1188370110 c:\users\david\documents\github\master\unittest++\src\unittest++.h
+	"Config.h"
+	"Test.h"
+	"TestList.h"
+	"TestSuite.h"
+	"TestResults.h"
+	"TestMacros.h"
+	"CheckMacros.h"
+	"TestRunner.h"
+	"TimeConstraint.h"
+
+1225377516 c:\users\david\documents\github\master\unittest++\src\config.h
+
+1225291088 c:\users\david\documents\github\master\unittest++\src\test.h
+	"TestDetails.h"
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\testdetails.h
+
+1180471358 c:\users\david\documents\github\master\unittest++\src\testlist.h
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\testsuite.h
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\testresults.h
+
+1225394826 c:\users\david\documents\github\master\unittest++\src\testmacros.h
+	"Config.h"
+	"ExecuteTest.h"
+	"AssertException.h"
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"Posix/SignalTranslator.h"
+
+1225291088 c:\users\david\documents\github\master\unittest++\src\executetest.h
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"AssertException.h"
+	"CurrentTest.h"
+	"Posix/SignalTranslator.h"
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\memoryoutstream.h
+	"Config.h"
+	<sstream>
+	<cstddef>
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\assertexception.h
+	<exception>
+
+1225291088 c:\users\david\documents\github\master\unittest++\src\currenttest.h
+
+1224687402 c:\users\david\documents\github\master\unittest++\src\posix\signaltranslator.h
+	<setjmp.h>
+	<signal.h>
+
+1225291088 c:\users\david\documents\github\master\unittest++\src\checkmacros.h
+	"Checks.h"
+	"AssertException.h"
+	"MemoryOutStream.h"
+	"TestDetails.h"
+	"CurrentTest.h"
+
+1225376862 c:\users\david\documents\github\master\unittest++\src\checks.h
+	"Config.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1225291088 c:\users\david\documents\github\master\unittest++\src\testrunner.h
+	"Test.h"
+	"TestList.h"
+	"CurrentTest.h"
+
+1225291088 c:\users\david\documents\github\master\unittest++\src\timeconstraint.h
+	"TimeHelpers.h"
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\timehelpers.h
+	"Config.h"
+	"Posix/TimeHelpers.h"
+	"Win32/TimeHelpers.h"
+
+1174318456 c:\users\david\documents\github\master\unittest++\src\posix\timehelpers.h
+	<sys/time.h>
+
+1225377516 c:\users\david\documents\github\master\unittest++\src\win32\timehelpers.h
+	"../Config.h"
+
+1399738376 c:\users\david\documents\github\master\test\populationtest.h
+	"../population.h"
+
+1399748892 c:\users\david\documents\github\master\random.h
+	<chrono>
+	<random>
+	"parameters.h"
+
+1399749922 c:\users\david\documents\github\master\initializer.h
+	"random.h"
+
+1399749780 c:\users\david\documents\github\master\brkga.h
+	"parameters.h"
+	"population.h"
+	"evolver.h"
+	"initializer.h"
+	"decoder.h"
+
+1399738396 c:\users\david\documents\github\master\decoder.h
+	"population.h"
+
+1399749040 c:\users\david\documents\github\master\test\evolvertest.h
+	<iostream>
+	"../evolver.h"
+	"../random.h"
+
+1399749399 source:c:\users\david\documents\github\master\clsd\clsddecoder.cpp
+	"clsddecoder.h"
+
+1399749780 c:\users\david\documents\github\master\clsd\clsddecoder.h
 
