@@ -41,8 +41,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="CLSD/clsddecoder.cpp" />
 		<Unit filename="CLSD/clsddecoder.h" />
+		<Unit filename="CLSD/data.h" />
+		<Unit filename="CLSD/objective.h" />
+		<Unit filename="CLSD/sequence.h" />
+		<Unit filename="CLSD/variables.h" />
 		<Unit filename="brkga.h" />
 		<Unit filename="decoder.h" />
 		<Unit filename="evolver.h" />

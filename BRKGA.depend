@@ -19,12 +19,13 @@
 
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
-1399739672 source:c:\users\david\documents\github\master\main.cpp
+1399753288 source:c:\users\david\documents\github\master\main.cpp
 	<iostream>
 	"UnitTest++.h"
 	"test/populationtest.h"
 	"test/evolvertest.h"
 	"brkga.h"
+	"CLSD/data.h"
 
 1399750071 c:\users\david\documents\github\master\population.h
 	<vector>
@@ -156,5 +157,8 @@
 1399749399 source:c:\users\david\documents\github\master\clsd\clsddecoder.cpp
 	"clsddecoder.h"
 
-1399749780 c:\users\david\documents\github\master\clsd\clsddecoder.h
+1399751603 c:\users\david\documents\github\master\clsd\clsddecoder.h
+	"../population.h"
+
+1399753641 c:\users\david\documents\github\master\clsd\data.h
 

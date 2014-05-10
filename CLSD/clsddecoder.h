@@ -1,12 +1,19 @@
 #ifndef CLSDDECODER_H
 #define CLSDDECODER_H
 
+#include "../population.h"
 
 class CLSDdecoder
 {
   public:
-    CLSDdecoder();
+    CLSDdecoder(Population* p)
+    : pop(p)
+    {}
+    void decodePopulation();
+    void decodeChromosome();
+
   private:
+    Population* pop;
 };
 
 #endif // CLSDDECODER_H

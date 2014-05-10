@@ -5,7 +5,7 @@
 #include "test/evolvertest.h"
 
 #include "brkga.h"
-
+#include "CLSD/data.h"
 using namespace BRKGA;
 
 int main()
