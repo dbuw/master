@@ -14,6 +14,7 @@ class CLSDdecoder
 
   private:
     Population* pop;
+    Data* data;
 };
 
 #endif // CLSDDECODER_H

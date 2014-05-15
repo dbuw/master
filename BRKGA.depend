@@ -19,13 +19,13 @@
 
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
-1399753288 source:c:\users\david\documents\github\master\main.cpp
+1400148402 source:c:\users\david\documents\github\master\main.cpp
 	<iostream>
 	"UnitTest++.h"
 	"test/populationtest.h"
 	"test/evolvertest.h"
 	"brkga.h"
-	"CLSD/data.h"
+	"CLSD/chromosomedecoder.h"
 
 1399750071 c:\users\david\documents\github\master\population.h
 	<vector>
@@ -42,7 +42,7 @@
 1399749851 c:\users\david\documents\github\master\parameters.h
 	<math.h>
 
-1399740733 c:\users\david\documents\github\master\util.h
+1400149021 c:\users\david\documents\github\master\util.h
 
 1188370110 c:\users\david\documents\github\master\unittest++\src\unittest++.h
 	"Config.h"
@@ -160,5 +160,17 @@
 1399751603 c:\users\david\documents\github\master\clsd\clsddecoder.h
 	"../population.h"
 
-1399753641 c:\users\david\documents\github\master\clsd\data.h
+1400148551 c:\users\david\documents\github\master\clsd\data.h
+
+1399981327 c:\users\david\documents\github\master\clsd\sequence.h
+
+1400162607 c:\users\david\documents\github\master\clsd\chromosomedecoder.h
+	"data.h"
+	"variables.h"
+	"encoding.h"
+
+1400148701 c:\users\david\documents\github\master\clsd\variables.h
+
+1400149039 c:\users\david\documents\github\master\clsd\encoding.h
+	"../util.h"
 
