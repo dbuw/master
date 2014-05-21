@@ -41,11 +41,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="CLSD/chromosomedecoder.h" />
+		<Unit filename="CLSD/InitialSequencer.h" />
+		<Unit filename="CLSD/Repair.h" />
+		<Unit filename="CLSD/Solution.h" />
 		<Unit filename="CLSD/clsddecoder.h" />
 		<Unit filename="CLSD/data.h" />
 		<Unit filename="CLSD/encoding.h" />
+		<Unit filename="CLSD/sequence.h" />
 		<Unit filename="CLSD/variables.h" />
+		<Unit filename="FileReader/instance.cpp" />
+		<Unit filename="FileReader/instance.h" />
+		<Unit filename="FileReader/instanceToData.h" />
 		<Unit filename="brkga.h" />
 		<Unit filename="decoder.h" />
 		<Unit filename="evolver.h" />
@@ -54,9 +60,11 @@
 		<Unit filename="parameters.h" />
 		<Unit filename="population.h" />
 		<Unit filename="random.h" />
+		<Unit filename="test/chromosomedecodertest.h" />
+		<Unit filename="test/encodingtest.h" />
 		<Unit filename="test/evolvertest.h" />
 		<Unit filename="test/populationtest.h" />
-		<Unit filename="util.h" />
+		<Unit filename="util/util.h" />
 		<Extensions>
 			<envvars />
 			<code_completion />

@@ -2,24 +2,27 @@
 #define INITIALIZER_H_INCLUDED
 
 #include "random.h"
-namespace BRKGA
-{
+namespace BRKGA {
 
-class Initializer
-{
-  public:
-  Initializer(Parameters* p){}
+class Initializer {
+public:
+  Initializer(Parameters* p)
+  : param(p)
+  {}
 
   template <typename Iter>
-  void randomInt(Iter first, Iter last){
-    if (first == last){return;};
-    while (first != last){
+  void randomInt(Iter first, Iter last) {
+
+    if(first == last) {return;};
+    while(first != last) {
+
       *first = uniformIntDistribution(param->minGeneValue(),
                                       param->maxGeneValue());
+
       ++first;
     }
   }
-  private:
+private:
   Parameters* param;
 };
 

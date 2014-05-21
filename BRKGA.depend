@@ -2,6 +2,8 @@
 1399556175 source:/home/bam/c/BRKGA/generation.cpp
 	"generation.h"
 
+1399738396 n.h"
+
 1399561139 /home/bam/c/BRKGA/generation.h
 	"population.h"
 
@@ -14,37 +16,43 @@
 	<algorithm>
 	<utility>
 
+1399749922 
+
 1399621510 source:/home/bam/c/BRKGA/brkgeneticalgorithm.cpp
 	"brkgeneticalgorithm.h"
 
+1399621510 calgorithm.h"
+
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
-1400148402 source:c:\users\david\documents\github\master\main.cpp
+1400707678 source:c:\users\david\documents\github\master\main.cpp
 	<iostream>
-	"UnitTest++.h"
-	"test/populationtest.h"
-	"test/evolvertest.h"
 	"brkga.h"
 	"CLSD/chromosomedecoder.h"
+	"CLSD/Solution.h"
+	"FileReader/instance.h"
+	"FileReader/instanceToData.h"
 
-1399750071 c:\users\david\documents\github\master\population.h
+1400148402 mosomedecoder.h"
+
+1400585579 c:\users\david\documents\github\master\population.h
 	<vector>
 	<algorithm>
 	<utility>
 
-1399749071 c:\users\david\documents\github\master\evolver.h
+1400587073 c:\users\david\documents\github\master\evolver.h
 	"population.h"
 	"parameters.h"
 	"initializer.h"
 	"random.h"
-	"util.h"
+	"util/util.h"
 
-1399749851 c:\users\david\documents\github\master\parameters.h
+1400417974 c:\users\david\documents\github\master\parameters.h
 	<math.h>
 
 1400149021 c:\users\david\documents\github\master\util.h
 
-1188370110 c:\users\david\documents\github\master\unittest++\src\unittest++.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\unittest++.h
 	"Config.h"
 	"Test.h"
 	"TestList.h"
@@ -55,20 +63,24 @@
 	"TestRunner.h"
 	"TimeConstraint.h"
 
-1225377516 c:\users\david\documents\github\master\unittest++\src\config.h
+1188370110 raint.h"
 
-1225291088 c:\users\david\documents\github\master\unittest++\src\test.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\config.h
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\test.h
 	"TestDetails.h"
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\testdetails.h
+1225291088 ls.h"
 
-1180471358 c:\users\david\documents\github\master\unittest++\src\testlist.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\testdetails.h
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\testsuite.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\testlist.h
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\testresults.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\testsuite.h
 
-1225394826 c:\users\david\documents\github\master\unittest++\src\testmacros.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\testresults.h
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\testmacros.h
 	"Config.h"
 	"ExecuteTest.h"
 	"AssertException.h"
@@ -76,80 +88,105 @@
 	"MemoryOutStream.h"
 	"Posix/SignalTranslator.h"
 
-1225291088 c:\users\david\documents\github\master\unittest++\src\executetest.h
+1225291088 nalTranslator.h"
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\executetest.h
 	"TestDetails.h"
 	"MemoryOutStream.h"
 	"AssertException.h"
 	"CurrentTest.h"
 	"Posix/SignalTranslator.h"
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\memoryoutstream.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\memoryoutstream.h
 	"Config.h"
 	<sstream>
 	<cstddef>
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\assertexception.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\assertexception.h
 	<exception>
 
-1225291088 c:\users\david\documents\github\master\unittest++\src\currenttest.h
+1174318456 >
 
-1224687402 c:\users\david\documents\github\master\unittest++\src\posix\signaltranslator.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\currenttest.h
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\posix\signaltranslator.h
 	<setjmp.h>
 	<signal.h>
 
-1225291088 c:\users\david\documents\github\master\unittest++\src\checkmacros.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\checkmacros.h
 	"Checks.h"
 	"AssertException.h"
 	"MemoryOutStream.h"
 	"TestDetails.h"
 	"CurrentTest.h"
 
-1225376862 c:\users\david\documents\github\master\unittest++\src\checks.h
+1225291088 st.h"
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\checks.h
 	"Config.h"
 	"TestResults.h"
 	"MemoryOutStream.h"
 
-1225291088 c:\users\david\documents\github\master\unittest++\src\testrunner.h
+1225376862 Stream.h"
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\testrunner.h
 	"Test.h"
 	"TestList.h"
 	"CurrentTest.h"
 
-1225291088 c:\users\david\documents\github\master\unittest++\src\timeconstraint.h
+1400327422 c:\users\david\documents\github\master\unittest++\src\timeconstraint.h
 	"TimeHelpers.h"
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\timehelpers.h
+1225291088 rs.h"
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\timehelpers.h
 	"Config.h"
 	"Posix/TimeHelpers.h"
 	"Win32/TimeHelpers.h"
 
-1174318456 c:\users\david\documents\github\master\unittest++\src\posix\timehelpers.h
+1174318456 eHelpers.h"
+
+1400327422 c:\users\david\documents\github\master\unittest++\src\posix\timehelpers.h
 	<sys/time.h>
 
-1225377516 c:\users\david\documents\github\master\unittest++\src\win32\timehelpers.h
+1174318456 h>
+
+1400327424 c:\users\david\documents\github\master\unittest++\src\win32\timehelpers.h
 	"../Config.h"
 
-1399738376 c:\users\david\documents\github\master\test\populationtest.h
+1399749040 .h"
+
+1400417974 c:\users\david\documents\github\master\test\populationtest.h
 	"../population.h"
 
-1399748892 c:\users\david\documents\github\master\random.h
+1399751603 tion.h"
+
+1400584597 c:\users\david\documents\github\master\random.h
 	<chrono>
 	<random>
 	"parameters.h"
 
-1399749922 c:\users\david\documents\github\master\initializer.h
+1399748892 s.h"
+
+1400584574 c:\users\david\documents\github\master\initializer.h
 	"random.h"
 
-1399749780 c:\users\david\documents\github\master\brkga.h
+1400707628 c:\users\david\documents\github\master\brkga.h
 	"parameters.h"
 	"population.h"
 	"evolver.h"
 	"initializer.h"
 	"decoder.h"
+	"CLSD/clsddecoder.h"
 
-1399738396 c:\users\david\documents\github\master\decoder.h
+1400149039 "
+
+1400658154 c:\users\david\documents\github\master\decoder.h
 	"population.h"
+	"parameters.h"
+	"CLSD/clsddecoder.h"
 
-1399749040 c:\users\david\documents\github\master\test\evolvertest.h
+1400587049 c:\users\david\documents\github\master\test\evolvertest.h
 	<iostream>
 	"../evolver.h"
 	"../random.h"
@@ -157,20 +194,230 @@
 1399749399 source:c:\users\david\documents\github\master\clsd\clsddecoder.cpp
 	"clsddecoder.h"
 
-1399751603 c:\users\david\documents\github\master\clsd\clsddecoder.h
+1399749399 er.h"
+
+1400615911 c:\users\david\documents\github\master\clsd\clsddecoder.h
+	"data.h"
+	"Solution.h"
+	"encoding.h"
+
+1400617811 c:\users\david\documents\github\master\clsd\data.h
+	"../util/util.h"
+
+1400662439 c:\users\david\documents\github\master\clsd\sequence.h
+	<vector>
+	<algorithm>
+
+1400493304 c:\users\david\documents\github\master\clsd\chromosomedecoder.h
+	"data.h"
+	"variables.h"
+	"encoding.h"
+	"sequence.h"
+
+1400162607 h"
+
+1400672362 c:\users\david\documents\github\master\clsd\variables.h
+	"../util/util.h"
+
+1400493225 c:\users\david\documents\github\master\clsd\encoding.h
+	"../util/util.h"
+
+1400227166 source:/home/bam/Arbeitsfläche/master/main.cpp
+	<iostream>
+	"brkga.h"
+	"CLSD/chromosomedecoder.h"
+
+1188366510 /home/bam/Arbeitsfläche/master/UnitTest++/src/UnitTest++.h
+	"Config.h"
+	"Test.h"
+	"TestList.h"
+	"TestSuite.h"
+	"TestResults.h"
+	"TestMacros.h"
+	"CheckMacros.h"
+	"TestRunner.h"
+	"TimeConstraint.h"
+
+1225373916 /home/bam/Arbeitsfläche/master/UnitTest++/src/Config.h
+
+1225287488 /home/bam/Arbeitsfläche/master/UnitTest++/src/Test.h
+	"TestDetails.h"
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/TestDetails.h
+
+1180467758 /home/bam/Arbeitsfläche/master/UnitTest++/src/TestList.h
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/TestSuite.h
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/TestResults.h
+
+1225391226 /home/bam/Arbeitsfläche/master/UnitTest++/src/TestMacros.h
+	"Config.h"
+	"ExecuteTest.h"
+	"AssertException.h"
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"Posix/SignalTranslator.h"
+
+1225287488 /home/bam/Arbeitsfläche/master/UnitTest++/src/ExecuteTest.h
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"AssertException.h"
+	"CurrentTest.h"
+	"Posix/SignalTranslator.h"
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/MemoryOutStream.h
+	"Config.h"
+	<sstream>
+	<cstddef>
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/AssertException.h
+	<exception>
+
+1225287488 /home/bam/Arbeitsfläche/master/UnitTest++/src/CurrentTest.h
+
+1224683802 /home/bam/Arbeitsfläche/master/UnitTest++/src/Posix/SignalTranslator.h
+	<setjmp.h>
+	<signal.h>
+
+1225287488 /home/bam/Arbeitsfläche/master/UnitTest++/src/CheckMacros.h
+	"Checks.h"
+	"AssertException.h"
+	"MemoryOutStream.h"
+	"TestDetails.h"
+	"CurrentTest.h"
+
+1225373262 /home/bam/Arbeitsfläche/master/UnitTest++/src/Checks.h
+	"Config.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1225287488 /home/bam/Arbeitsfläche/master/UnitTest++/src/TestRunner.h
+	"Test.h"
+	"TestList.h"
+	"CurrentTest.h"
+
+1225287488 /home/bam/Arbeitsfläche/master/UnitTest++/src/TimeConstraint.h
+	"TimeHelpers.h"
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/TimeHelpers.h
+	"Config.h"
+	"Posix/TimeHelpers.h"
+	"Win32/TimeHelpers.h"
+
+1174314856 /home/bam/Arbeitsfläche/master/UnitTest++/src/Posix/TimeHelpers.h
+	<sys/time.h>
+
+1225373916 /home/bam/Arbeitsfläche/master/UnitTest++/src/Win32/TimeHelpers.h
+	"../Config.h"
+
+1399734778 /home/bam/Arbeitsfläche/master/test/populationtest.h
 	"../population.h"
 
-1400148551 c:\users\david\documents\github\master\clsd\data.h
+1399746472 /home/bam/Arbeitsfläche/master/population.h
+	<vector>
+	<algorithm>
+	<utility>
 
-1399981327 c:\users\david\documents\github\master\clsd\sequence.h
+1399745442 /home/bam/Arbeitsfläche/master/test/evolvertest.h
+	<iostream>
+	"../evolver.h"
+	"../random.h"
 
-1400162607 c:\users\david\documents\github\master\clsd\chromosomedecoder.h
+1399745472 /home/bam/Arbeitsfläche/master/evolver.h
+	"population.h"
+	"parameters.h"
+	"initializer.h"
+	"random.h"
+	"util.h"
+
+1399746252 /home/bam/Arbeitsfläche/master/parameters.h
+	<math.h>
+
+1399746324 /home/bam/Arbeitsfläche/master/initializer.h
+	"random.h"
+
+1399745294 /home/bam/Arbeitsfläche/master/random.h
+	<chrono>
+	<random>
+	"parameters.h"
+
+1400227087 /home/bam/Arbeitsfläche/master/util.h
+
+1399746182 /home/bam/Arbeitsfläche/master/brkga.h
+	"parameters.h"
+	"population.h"
+	"evolver.h"
+	"initializer.h"
+	"decoder.h"
+
+1399734798 /home/bam/Arbeitsfläche/master/decoder.h
+	"population.h"
+
+1400257205 /home/bam/Arbeitsfläche/master/CLSD/chromosomedecoder.h
 	"data.h"
 	"variables.h"
 	"encoding.h"
 
-1400148701 c:\users\david\documents\github\master\clsd\variables.h
+1400144952 /home/bam/Arbeitsfläche/master/CLSD/data.h
 
-1400149039 c:\users\david\documents\github\master\clsd\encoding.h
+1400145102 /home/bam/Arbeitsfläche/master/CLSD/variables.h
+
+1400227196 /home/bam/Arbeitsfläche/master/CLSD/encoding.h
 	"../util.h"
+
+1400658006 c:\users\david\documents\github\master\util\util.h
+	<algorithm>
+
+1400328595 c:\users\david\documents\github\master\test\clsddecodertest.h
+	"../CLSD/clsddecoder.h"
+
+1400417975 c:\users\david\documents\github\master\test\chromosomedecodertest.h
+	"../CLSD/chromosomedecoder.h"
+
+1400417975 c:\users\david\documents\github\master\test\encodingtest.h
+	"../CLSD/encoding.h"
+
+1400487390 c:\users\david\documents\github\master\clsd\backwardimprover.h
+	"sequence.h"
+	"data.h"
+	"variables.h"
+	"../util/util.h"
+	<tuple>
+
+1400659896 c:\users\david\documents\github\master\clsd\initialsequencer.h
+
+1400424841 c:\users\david\documents\github\master\clsd\amendingprocedure.h
+	"sequence.h"
+	"data.h"
+	"variables.h"
+
+1400706671 c:\users\david\documents\github\master\clsd\solution.h
+	"data.h"
+	"variables.h"
+	"encoding.h"
+	"sequence.h"
+	"InitialSequencer.h"
+	"Repair.h"
+
+1400707548 c:\users\david\documents\github\master\clsd\repair.h
+	"data.h"
+	"variables.h"
+	"encoding.h"
+	"sequence.h"
+
+1400616959 source:c:\users\david\documents\github\master\filereader\instance.cpp
+	"instance.h"
+
+1400616836 c:\users\david\documents\github\master\filereader\instance.h
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+
+1400618270 c:\users\david\documents\github\master\filereader\instancetodata.h
+	"instance.h"
+	"../CLSD/data.h"
 

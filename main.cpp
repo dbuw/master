@@ -1,26 +1,67 @@
 #include <iostream>
 
-#include "UnitTest++.h"
-#include "test/populationtest.h"
-#include "test/evolvertest.h"
-
+//#include "UnitTest++.h"
+//#include "test/populationtest.h"
+//#include "test/evolvertest.h"
+//#include "test/clsddecodertest.h"
+//#include "test/chromosomedecodertest.h"
+//#include "test/encodingtest.h"
 #include "brkga.h"
 #include "CLSD/chromosomedecoder.h"
+#include "CLSD/Solution.h"
+#include "FileReader/instance.h"
+#include "FileReader/instanceToData.h"
 
 using namespace BRKGA;
-
+#define private public
 int main()
 {
-    //return UnitTest::RunAllTests();
 
-    std::vector<int> p;
-    int x = 10000000;
-    p.reserve(x);
-    for (int i = 0; i < x; ++i)
-    {
-      p.push_back(i);
-    }
-    return 0;
+////////////////////////////////////////////////////////////////////////////////
+////  READ FILE
+////////////////////////////////////////////////////////////////////////////////
+  Instance i;
+  i.readWinforData("instance_174");
+
+  Data d;
+
+  InstanceToData iConvertD;
+  iConvertD.convert(&i,&d);
+
+////////////////////////////////////////////////////////////////////////////////
+////  SET PARAMETERS
+////////////////////////////////////////////////////////////////////////////////
+
+  BRKGA::Parameters param;
+  param.setNrGenes(d.getJ() * d.getT() * 2);
+  param.setGenePrecision(2);
+  param.setNrGenerations(500);
+  param.setNrChromosomes(50);
+  param.setCrossoverProbability(70);
+  param.setNrMutants(5);
+  param.setNrElites(10);
+
+////////////////////////////////////////////////////////////////////////////////
+////  USE CUSTOM INITIALIZER AND DECODER
+////////////////////////////////////////////////////////////////////////////////
+
+  BRKGA::Initializer init(&param);
+
+  CLSDdecoder clsd(d);
+
+  BRKGA::BRKGA brkga(&param, &init, &clsd);
+
+////////////////////////////////////////////////////////////////////////////////
+////  RUN GA
+////////////////////////////////////////////////////////////////////////////////
+
+  brkga.run();
+
+
+  //return UnitTest::RunAllTests();
+
+
+  return 0;
 }
 
 
