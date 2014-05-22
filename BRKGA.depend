@@ -25,10 +25,9 @@
 
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
-1400707678 source:c:\users\david\documents\github\master\main.cpp
+1400753504 source:c:\users\david\documents\github\master\main.cpp
 	<iostream>
 	"brkga.h"
-	"CLSD/chromosomedecoder.h"
 	"CLSD/Solution.h"
 	"FileReader/instance.h"
 	"FileReader/instanceToData.h"
@@ -47,7 +46,7 @@
 	"random.h"
 	"util/util.h"
 
-1400417974 c:\users\david\documents\github\master\parameters.h
+1400753184 c:\users\david\documents\github\master\parameters.h
 	<math.h>
 
 1400149021 c:\users\david\documents\github\master\util.h
@@ -171,7 +170,7 @@
 1400584574 c:\users\david\documents\github\master\initializer.h
 	"random.h"
 
-1400707628 c:\users\david\documents\github\master\brkga.h
+1400752993 c:\users\david\documents\github\master\brkga.h
 	"parameters.h"
 	"population.h"
 	"evolver.h"
@@ -204,7 +203,7 @@
 1400617811 c:\users\david\documents\github\master\clsd\data.h
 	"../util/util.h"
 
-1400662439 c:\users\david\documents\github\master\clsd\sequence.h
+1400744270 c:\users\david\documents\github\master\clsd\sequence.h
 	<vector>
 	<algorithm>
 
@@ -392,15 +391,18 @@
 	"data.h"
 	"variables.h"
 
-1400706671 c:\users\david\documents\github\master\clsd\solution.h
+1400752342 c:\users\david\documents\github\master\clsd\solution.h
 	"data.h"
 	"variables.h"
 	"encoding.h"
 	"sequence.h"
 	"InitialSequencer.h"
 	"Repair.h"
+	"backwardpass.h"
+	"forwardpass.h"
+	"fixlinks.h"
 
-1400707548 c:\users\david\documents\github\master\clsd\repair.h
+1400744958 c:\users\david\documents\github\master\clsd\repair.h
 	"data.h"
 	"variables.h"
 	"encoding.h"
@@ -420,4 +422,10 @@
 1400618270 c:\users\david\documents\github\master\filereader\instancetodata.h
 	"instance.h"
 	"../CLSD/data.h"
+
+1400752206 c:\users\david\documents\github\master\clsd\backwardpass.h
+
+1400751728 c:\users\david\documents\github\master\clsd\forwardpass.h
+
+1400752993 c:\users\david\documents\github\master\clsd\fixlinks.h
 

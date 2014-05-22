@@ -7,7 +7,6 @@
 //#include "test/chromosomedecodertest.h"
 //#include "test/encodingtest.h"
 #include "brkga.h"
-#include "CLSD/chromosomedecoder.h"
 #include "CLSD/Solution.h"
 #include "FileReader/instance.h"
 #include "FileReader/instanceToData.h"
@@ -36,9 +35,9 @@ int main()
   param.setNrGenes(d.getJ() * d.getT() * 2);
   param.setGenePrecision(2);
   param.setNrGenerations(500);
-  param.setNrChromosomes(50);
-  param.setCrossoverProbability(70);
-  param.setNrMutants(5);
+  param.setNrChromosomes(100);
+  param.setCrossoverProbability(0.90);
+  param.setNrMutants(30);
   param.setNrElites(10);
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -251,13 +251,22 @@ public:
 
   int setupTimes(int t) {
     int sum {0};
-//    //if there is no linkage
-//    if (t > 0){
-//      sum += data->getST((sequence->end(t-1)-1)->j,sequence->begin(t)->j);
-//    }
-//    for (auto it = sequence->begin(t); it != sequence->end(t); ++it){
-//      sum += data->getST(it->j,(it+1)->j);
-//    }
+    //if there is no linkage
+    if (sequence->begin(t) != sequence->begin()){
+      sum += data->getST((sequence->end(t-1)-1)->j,sequence->begin(t)->j);
+    }
+    auto itFirst = sequence->begin(t);
+    auto itLast = sequence->begin(t+1);
+
+    while (itFirst != sequence->end() && itLast != sequence->end()){
+      if( (itFirst+1) != sequence->end())
+      sum += data->getST(itFirst->j, (itFirst+1)->j);
+      ++itFirst;
+
+    }
+
+
+
     return sum;
   }
 

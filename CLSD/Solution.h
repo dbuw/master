@@ -8,6 +8,9 @@
 
 #include "InitialSequencer.h"
 #include "Repair.h"
+#include "backwardpass.h"
+#include "forwardpass.h"
+#include "fixlinks.h"
 
 class Solution
 {
@@ -27,6 +30,18 @@ public:
     i.run();
 
     Repair r(data,&vars,&sequence,enc);
+    r.run();
+
+    BackwardPass b(data,&vars,&sequence,enc);
+    b.run();
+
+    generateInventory();
+    ForwardPass f(data,&vars,&sequence,enc);
+    f.run();
+
+    FixLinks l(data,&vars,&sequence,enc);
+    l.run();
+    //fix
     r.run();
 
 //    for (auto i : sequence){
@@ -89,8 +104,8 @@ public:
         if (data->getD(i,j) > 0){
         if ( int(vars.getX(i,j) + vars.getI(i,j-1)) < data->getD(i,j)){
           sum += bc;
-          std::cout << "i,t " << i << " "<< j << " " << int(vars.getX(i,j) + vars.getI(i,j-1))
-          << " < " << data->getD(i,j) << " --- ";
+//          std::cout << "i,t " << i << " "<< j << " " << int(vars.getX(i,j) + vars.getI(i,j-1))
+//          << " < " << data->getD(i,j) << " --- ";
         }
 
         }

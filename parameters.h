@@ -26,7 +26,7 @@ public:
   void setNrMutants(int i) {numM = i;};
   void setNrElites(int i) {numE = i;};
   void setNrGenes(int i) {numGenes = i;};
-  void setCrossoverProbability(int i) {pc = i;};
+  void setCrossoverProbability(float i) { pc = (int) (i*maxGene);};
   //getters
   int maxGen() {return numGens;};
   int nrChromosomes() {return numC;};

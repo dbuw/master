@@ -35,7 +35,6 @@ public:
     evo.evolve();
 
     //all other gens
-
     for (int i = 0; i < param->maxGen(); ++i){
       auto objectives = decoder.decodePopulation(&pop, param, clsd);
       auto objIt = objectives.begin();
@@ -44,18 +43,8 @@ public:
         ++objIt;
       }
       evo.evolve();
-      std::cout << "Gen: " << i+1 << " Fit: " << pop.beginFitness()->second << "\n";
-//      for (auto it = pop.beginFitness(); it != pop.beginFitness()+param->nrElites(); ++it){
-//        std::cout << it->second << " ";
-//      }
-//      for (auto  i : objectives){
-//        std::cout << i << " ";
-//      }
-
-      std::cout << "\n";
+      std::cout << "Gen: " << i+1 << " Fit: " << pop.beginFitness()->second << "\n\n";
     }
-    ///! for all genereations .... care!!! don't get elites, get pop over index
-
   }
 
 private:

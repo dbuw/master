@@ -47,6 +47,7 @@ public:
   }
   iterator end(int t) {
     auto it = begin(t);
+    if (it == seq.end()){return seq.end();}
     while(it->t == t) {
       if (it == seq.end()){return seq.end();}
       ++it;
@@ -56,19 +57,6 @@ public:
 
   void insertOrdered(Operation j, int t)
   {
-//    auto first = begin(t);
-//    auto last = end(t);
-//
-//    while (first != last){
-//      if (j.pSequence < first->pSequence){
-//          insert(first, j);
-//      }
-//      ++first;
-//    }
-//
-//    if (first == last){
-//      insert(first, j);
-//    }
     auto first = seq.begin();
     auto last = end(t);
     while (j.t < t){

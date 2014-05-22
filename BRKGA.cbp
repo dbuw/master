@@ -44,9 +44,12 @@
 		<Unit filename="CLSD/InitialSequencer.h" />
 		<Unit filename="CLSD/Repair.h" />
 		<Unit filename="CLSD/Solution.h" />
+		<Unit filename="CLSD/backwardpass.h" />
 		<Unit filename="CLSD/clsddecoder.h" />
 		<Unit filename="CLSD/data.h" />
 		<Unit filename="CLSD/encoding.h" />
+		<Unit filename="CLSD/fixlinks.h" />
+		<Unit filename="CLSD/forwardpass.h" />
 		<Unit filename="CLSD/sequence.h" />
 		<Unit filename="CLSD/variables.h" />
 		<Unit filename="FileReader/instance.cpp" />
