@@ -1,6 +1,10 @@
 #ifndef INITIALSEQUENCER_H_INCLUDED
 #define INITIALSEQUENCER_H_INCLUDED
 
+#include "data.h"
+#include "variables.h"
+#include "encoding.h"
+#include "sequence.h"
 class InitialSequencer
 {
 public:

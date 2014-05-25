@@ -25,8 +25,11 @@
 
 1399621595 /home/bam/c/BRKGA/brkgeneticalgorithm.h
 
-1400753504 source:c:\users\david\documents\github\master\main.cpp
+1401049577 source:c:\users\david\documents\github\master\main.cpp
 	<iostream>
+	"UnitTest++.h"
+	"test/initialsequencertest.h"
+	"test/repairsequencetest.h"
 	"brkga.h"
 	"CLSD/Solution.h"
 	"FileReader/instance.h"
@@ -46,7 +49,7 @@
 	"random.h"
 	"util/util.h"
 
-1400753184 c:\users\david\documents\github\master\parameters.h
+1401049953 c:\users\david\documents\github\master\parameters.h
 	<math.h>
 
 1400149021 c:\users\david\documents\github\master\util.h
@@ -170,7 +173,7 @@
 1400584574 c:\users\david\documents\github\master\initializer.h
 	"random.h"
 
-1400752993 c:\users\david\documents\github\master\brkga.h
+1401050417 c:\users\david\documents\github\master\brkga.h
 	"parameters.h"
 	"population.h"
 	"evolver.h"
@@ -195,7 +198,7 @@
 
 1399749399 er.h"
 
-1400615911 c:\users\david\documents\github\master\clsd\clsddecoder.h
+1401046503 c:\users\david\documents\github\master\clsd\clsddecoder.h
 	"data.h"
 	"Solution.h"
 	"encoding.h"
@@ -203,7 +206,7 @@
 1400617811 c:\users\david\documents\github\master\clsd\data.h
 	"../util/util.h"
 
-1400744270 c:\users\david\documents\github\master\clsd\sequence.h
+1401041548 c:\users\david\documents\github\master\clsd\sequence.h
 	<vector>
 	<algorithm>
 
@@ -218,7 +221,7 @@
 1400672362 c:\users\david\documents\github\master\clsd\variables.h
 	"../util/util.h"
 
-1400493225 c:\users\david\documents\github\master\clsd\encoding.h
+1401045631 c:\users\david\documents\github\master\clsd\encoding.h
 	"../util/util.h"
 
 1400227166 source:/home/bam/Arbeitsfläche/master/main.cpp
@@ -384,14 +387,18 @@
 	"../util/util.h"
 	<tuple>
 
-1400659896 c:\users\david\documents\github\master\clsd\initialsequencer.h
+1400783536 c:\users\david\documents\github\master\clsd\initialsequencer.h
+	"data.h"
+	"variables.h"
+	"encoding.h"
+	"sequence.h"
 
 1400424841 c:\users\david\documents\github\master\clsd\amendingprocedure.h
 	"sequence.h"
 	"data.h"
 	"variables.h"
 
-1400752342 c:\users\david\documents\github\master\clsd\solution.h
+1401049953 c:\users\david\documents\github\master\clsd\solution.h
 	"data.h"
 	"variables.h"
 	"encoding.h"
@@ -401,8 +408,10 @@
 	"backwardpass.h"
 	"forwardpass.h"
 	"fixlinks.h"
+	"repairsequence.h"
+	"swaps.h"
 
-1400744958 c:\users\david\documents\github\master\clsd\repair.h
+1401034785 c:\users\david\documents\github\master\clsd\repair.h
 	"data.h"
 	"variables.h"
 	"encoding.h"
@@ -427,5 +436,27 @@
 
 1400751728 c:\users\david\documents\github\master\clsd\forwardpass.h
 
-1400752993 c:\users\david\documents\github\master\clsd\fixlinks.h
+1401049952 c:\users\david\documents\github\master\clsd\fixlinks.h
+
+1401032068 c:\users\david\documents\github\master\test\initialsequencertest.h
+	"../CLSD/InitialSequencer.h"
+	<vector>
+
+1401027721 c:\users\david\documents\github\master\test\repairtest.h
+	"../CLSD/InitialSequencer.h"
+	"../CLSD/repair.h"
+	<vector>
+
+1401040160 c:\users\david\documents\github\master\clsd\repairsequence.h
+	"sequenceutil.h"
+
+1401028080 c:\users\david\documents\github\master\clsd\sequenceutil.h
+	"sequence.h"
+	"data.h"
+
+1401036777 c:\users\david\documents\github\master\test\repairsequencetest.h
+	"../CLSD/repairsequence.h"
+
+1401044306 c:\users\david\documents\github\master\clsd\swaps.h
+	"sequenceutil.h"
 

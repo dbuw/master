@@ -11,11 +11,15 @@
 #include "backwardpass.h"
 #include "forwardpass.h"
 #include "fixlinks.h"
+#include "repairsequence.h"
+#include "swaps.h"
 
 class Solution
 {
 
 public:
+  Solution(){}
+
   Solution(Data* d, Encoding* e)
   : data(d)
   , enc(e)
@@ -29,8 +33,11 @@ public:
     InitialSequencer i(data,&vars,&sequence,enc);
     i.run();
 
-    Repair r(data,&vars,&sequence,enc);
-    r.run();
+    //Repair r(data,&vars,&sequence,enc);
+    //r.run();
+
+    RepairSequence rs(data,&vars,&sequence,enc);
+    rs.run();
 
     BackwardPass b(data,&vars,&sequence,enc);
     b.run();
@@ -42,36 +49,17 @@ public:
     FixLinks l(data,&vars,&sequence,enc);
     l.run();
     //fix
-    r.run();
+    rs.run();
 
-//    for (auto i : sequence){
-//      std::cout << "(" << i.j << "," << i.t << "," << *i.X << ") ";
-//    }
-//    std::cout << "production \n";
-//    for (int i = 0; i < data->getJ(); ++i){
-//      for (int j = 0; j < data->getT(); ++j){
-//        std::cout << vars.getX(i,j) << " ";
-//      }
-//      std::cout << "\n";
-//    }
-//    std::cout << "demand \n";
-//    for (int i = 0; i < data->getJ(); ++i){
-//      for (int j = 0; j < data->getT(); ++j){
-//        std::cout << data->getD(i,j) << " ";
-//      }
-//      std::cout << "\n";
-//    }
+    Swaps s(data,&vars,&sequence,enc);
+    s.TwoSwap();
+
+
+
+
 
     generateInventory();
     auto obj = objective();
-
-//    std::cout << "inventory\n";
-//    for (int i = 0; i < data->getJ(); ++i){
-//      for (int j = 0; j < data->getT(); ++j){
-//        std::cout << vars.getI(i,j) << " ";
-//      }
-//      std::cout << "\n";
-//    }
 
     return obj;
   }
@@ -128,6 +116,43 @@ public:
 
   int objective(){
     return (setupCost() + holdingCost() + backOrderCost());
+  }
+
+  void print(){
+    for(auto it = sequence.begin(); it != sequence.end(); ++it){
+      (it->X) = vars.toX(it->j, it->t);
+    }
+
+    std::cout << "----------------------------------------\n";
+    std::cout << "z: " << objective() << " = "<< holdingCost() << " + " << setupCost() << "\n";
+    std::cout << "----------------------------------------\n";
+    for (auto i : sequence){
+      std::cout << "(" << i.j << "," << i.t << "," << *i.X << ") ";
+    }
+    std::cout << "\n";
+    std::cout << "production \n";
+    for (int i = 0; i < data->getJ(); ++i){
+      for (int j = 0; j < data->getT(); ++j){
+        std::cout << vars.getX(i,j) << " ";
+      }
+      std::cout << "\n";
+    }
+    std::cout << "demand \n";
+    for (int i = 0; i < data->getJ(); ++i){
+      for (int j = 0; j < data->getT(); ++j){
+        std::cout << data->getD(i,j) << " ";
+      }
+      std::cout << "\n";
+    }
+
+    std::cout << "inventory\n";
+    for (int i = 0; i < data->getJ(); ++i){
+      for (int j = 0; j < data->getT(); ++j){
+        std::cout << vars.getI(i,j) << " ";
+      }
+      std::cout << "\n";
+    }
+
   }
 
 

@@ -50,7 +50,10 @@
 		<Unit filename="CLSD/encoding.h" />
 		<Unit filename="CLSD/fixlinks.h" />
 		<Unit filename="CLSD/forwardpass.h" />
+		<Unit filename="CLSD/repairsequence.h" />
 		<Unit filename="CLSD/sequence.h" />
+		<Unit filename="CLSD/sequenceutil.h" />
+		<Unit filename="CLSD/swaps.h" />
 		<Unit filename="CLSD/variables.h" />
 		<Unit filename="FileReader/instance.cpp" />
 		<Unit filename="FileReader/instance.h" />
@@ -66,7 +69,10 @@
 		<Unit filename="test/chromosomedecodertest.h" />
 		<Unit filename="test/encodingtest.h" />
 		<Unit filename="test/evolvertest.h" />
+		<Unit filename="test/initialsequencertest.h" />
 		<Unit filename="test/populationtest.h" />
+		<Unit filename="test/repairsequencetest.h" />
+		<Unit filename="test/repairtest.h" />
 		<Unit filename="util/util.h" />
 		<Extensions>
 			<envvars />

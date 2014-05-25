@@ -52,7 +52,7 @@ public:
           return std::get<2>(a) > std::get<2>(b);
           });
           if (std::get<2>(moves[0]) > 0){
-              //std::cout << std::get<2>(moves[0]) << "\n";
+
             *std::get<1>(moves[0])->X +=  std::get<3>(moves[0]);
             *std::get<0>(moves[0])->X -=  std::get<3>(moves[0]);
             if (*std::get<0>(moves[0])->X == 0){

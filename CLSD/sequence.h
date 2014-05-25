@@ -19,6 +19,16 @@ public:
 
     int pSequence;
     int pSetup;
+
+    bool operator==(const Operation& o){
+      if (o.j == j &&
+          o.t == t &&
+          *o.X == *X &&
+          o.pSequence == pSequence &&
+          o.pSetup == pSetup)
+          return true;
+      return false;
+    }
   };
 
 public:
@@ -33,6 +43,17 @@ public:
   void push_back(int j, int t, int* X) {
     Operation o(j,t,X);
     seq.push_back(o);
+  }
+
+  iterator findOperation(const Operation& o){
+    auto first = seq.begin();
+    while (first != seq.end()){
+      if (*first == o){return first;}
+      ++first;
+
+
+    }
+    return first;
   }
 
   iterator begin() {return seq.begin();}
@@ -59,18 +80,26 @@ public:
   {
     auto first = seq.begin();
     auto last = end(t);
-    while (j.t < t){
-      ++first;
+    while (j.t > first->t && first != seq.end()){
+        ++first;
     }
     if (first->t == t){
-      while (first != last){
-        if (j.pSequence < first->pSequence){
-            insert(first, j);
-        }
+      while (first != last && j.pSequence < first->pSequence){
         ++first;
       }
+      if (first == begin(t)){ //dont add item as first item (preserve linkage)
+        ++first;
+        insert(first, j);
+      }
+      else if (first == last){ //dont add item as last item (preserve linkage)
+        --first;
+        insert(first, j);
+      }
+      else
+      insert(first,j);
     }
-    insert(first, j);
+    else
+      insert(first, j);
   }
   //returns an iterator to a previous setup of j
   iterator prevSetup(iterator curr) {

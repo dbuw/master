@@ -14,7 +14,12 @@ public:
 
   typedef std::vector<int> container;
   typedef container::iterator iterator;
+  Encoding(){}
 
+  Encoding(int j, int t)
+    : J(j)
+    , T(t)
+  {}
   Encoding(container v, int j, int t)
     : enc(v)
     , J(j)

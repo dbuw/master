@@ -1,6 +1,8 @@
 #include <iostream>
 
-//#include "UnitTest++.h"
+#include "UnitTest++.h"
+#include "test/initialsequencertest.h"
+#include "test/repairsequencetest.h"
 //#include "test/populationtest.h"
 //#include "test/evolvertest.h"
 //#include "test/clsddecodertest.h"
@@ -33,12 +35,12 @@ int main()
 
   BRKGA::Parameters param;
   param.setNrGenes(d.getJ() * d.getT() * 2);
-  param.setGenePrecision(2);
-  param.setNrGenerations(500);
-  param.setNrChromosomes(100);
-  param.setCrossoverProbability(0.90);
-  param.setNrMutants(30);
-  param.setNrElites(10);
+  param.setGenePrecision(4);
+  param.setNrGenerations( 500 );
+  param.setNrChromosomes((d.getJ() * d.getT() * 2) * 3);
+  param.setCrossoverProbability(0.70);
+  param.setNrMutants( ((d.getJ() * d.getT() * 2) * 3 ) * 0.3);
+  param.setNrElites( ((d.getJ() * d.getT() * 2) * 3 ) * 0.1);
 
 ////////////////////////////////////////////////////////////////////////////////
 ////  USE CUSTOM INITIALIZER AND DECODER

@@ -43,9 +43,21 @@ public:
         ++objIt;
       }
       evo.evolve();
-      std::cout << "Gen: " << i+1 << " Fit: " << pop.beginFitness()->second << "\n\n";
+      std::cout << "Gen: " << i+1 << " Fit: ";
+      for (auto j = 0u; j < 1; ++j){
+      std::cout << (pop.beginFitness()+j)->second << " | ";
+      }
+      for (auto j = 0u; j < 1; ++j){
+      std::cout << (pop.beginFitness()+param->nrElites())->second << " | ";
+      }
+      for (auto j = 0u; j < 1; ++j){
+      std::cout << (pop.endFitness()-param->nrMutants())->second << " | ";
+      }
+      std::cout << "\n\n";
     }
+    clsd->printBest();
   }
+
 
 private:
   Decoder decoder;

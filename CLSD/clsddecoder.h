@@ -12,6 +12,7 @@ class CLSDdecoder
     CLSDdecoder(Data d)
     : data(d)
     {
+      bestObjective = 100000000;
     }
 
     void init()
@@ -23,14 +24,18 @@ class CLSDdecoder
     std::vector<int> decode(){
       addSolutions();
       for(auto& i : solutions){
-
           i.run();
-
-
       }
       std::vector<int> objectives;
+
       for(auto& i : solutions){
+          if (i.objective() < bestObjective){
+            bestSolution = i;
+
+            bestObjective = i.objective();
+          }
           objectives.push_back(i.objective());
+
       }
       return objectives;
     }
@@ -48,8 +53,16 @@ class CLSDdecoder
       encodings.push_back(e);
     }
 
+    void printBest(){
+      bestSolution.print();
+    }
+
 
   private:
+    Solution bestSolution;
+
+    int bestObjective;
+
     std::vector<Solution> solutions;
     std::vector<Encoding> encodings;
     Data data;
